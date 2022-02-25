@@ -1,4 +1,4 @@
-package stepdefinitions.onur;
+package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,7 +12,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 
-public class stepdefinitions {
+public class onur_stepdefinitions {
 Onur onur = new Onur();
 
     @Given("Launch browser, Navigate to {string}")
