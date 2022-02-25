@@ -1,9 +1,9 @@
-package stepdefinitions.gunter;
+package stepdefinitions;
 
 import io.cucumber.java.en.Then;
 import pages.Gunter;
 
-public class stepdefinitions {
+public class gunter_stepdefinitions {
 
     Gunter gunter = new Gunter();
 

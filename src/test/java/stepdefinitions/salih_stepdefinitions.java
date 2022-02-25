@@ -1,17 +1,16 @@
-package stepdefinitions.salih;
+package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import pages.Salih;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class stepdefinitions<Faker> {
+public class salih_stepdefinitions<Faker> {
 
     Salih salih=new Salih();    // src/test/java/pages/Salih.java > class'indan  bir obje olusturuldu.
     Actions actions=new Actions(Driver.getDriver());
