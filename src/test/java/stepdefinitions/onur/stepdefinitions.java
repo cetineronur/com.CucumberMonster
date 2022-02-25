@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import pages.Onur;
 import utilities.ConfigReader;
@@ -31,7 +32,8 @@ Onur onur = new Onur();
     }
     @Then("Verify text {string}")
     public void verify_text(String subscription) {
-        Assert.assertEquals(onur.subscription.getText(),subscription);
+        String subsc=subscription;
+        Assert.assertEquals(onur.subsc.getText(),subscription);
 
     }
     @Then("Enter {string} in input and click arrow button")

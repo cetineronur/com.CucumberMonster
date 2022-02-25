@@ -20,5 +20,8 @@ public Onur(){
 @FindBy(xpath = "//div[text()='You have been successfully subscribed!']")
     public WebElement message;
 
+    @FindBy(xpath = "//h2[text()='Subscription']")
+    public WebElement subsc;
+
 
 }
