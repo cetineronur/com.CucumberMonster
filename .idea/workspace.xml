@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9ef1fc76-9602-4775-8dd8-1636da99d9bb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Kubra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Kubra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/kubra_stepdefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/kubra_stepdefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Salih/TC001_RegisterUser.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Salih/TC002_Login_User_with_correct_email_and_password.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Salih/TC003_Login_User_with_incorrect_email_and_password.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/demo.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Cem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Emin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Gunter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Kubra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Mali.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Mustafa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Onur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Salih.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Sezen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Zeynep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/cem/stepdefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/emin/stepdefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/gunter/stepdefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/kubra/stepdefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/mali/stepdefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/mustafa/stepdefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/onur/stepdefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/salih/stepdefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/sezen/stepdefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/zeynep/stepdefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="25cPBeQ554xHdG4eLx4jNqfnrdG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HUAWEI\Desktop\com.CucumberMonster\src\test\resources\features" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: TC016: Place Order: Login before Checkout">
+    <configuration name="Feature: TC001_RegisterUser" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/TC001_RegisterUser.feature" />
+      <option name="GLUE" value="stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="com.CucumberMonster" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: TC001_RegisterUser" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: TC016" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/TC016.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="com.CucumberMonster" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: TC016" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: TC016: Place Order: Login before Checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/TC016.feature" />
+      <option name="GLUE" value="stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="com.CucumberMonster" />
+      <option name="NAME_FILTER" value="^TC016\: Place Order\: Login before Checkout$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC016\: Place Order\: Login before Checkout$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC016: Place Order: Login before Checkout" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: TC018: View Category Products (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/TC018.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="com.CucumberMonster" />
+      <option name="NAME_FILTER" value="^TC018\: View Category Products$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC018\: View Category Products$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC018: View Category Products" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.CucumberMonster" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: TC016: Place Order: Login before Checkout" />
+        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: TC018: View Category Products (1)" />
+        <item itemvalue="Cucumber Java.Feature: TC016" />
+        <item itemvalue="Cucumber Java.Feature: TC001_RegisterUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ef1fc76-9602-4775-8dd8-1636da99d9bb" name="Changes" comment="" />
+      <created>1645823267455</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645823267455</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
