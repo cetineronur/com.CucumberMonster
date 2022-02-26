@@ -3,7 +3,7 @@ Feature: TC001_Register User
 @salih
   Scenario: TC001_Register User Testi
 
-    Given Launch browser, Navigate to "url"
+    Given Launch browser, Navigate to "automationExerciseUrl"
     Then Verify that home page is visible successfully
     And Click on 'Signup / Login' button
     And Verify 'New User Signup!' is visible
