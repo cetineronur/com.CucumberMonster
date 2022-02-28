@@ -4,7 +4,7 @@ Feature: Automation Exercise
   Scenario: TC016: Place Order: Login before Checkout
 
    Given Launch browser, Navigate to "automationExerciseUrl"
-   Then Verify that home page is visible successfully
+  Then Verify that home page is visible successfully
    Then Click Signup/Login button
    Then Fill email, password and click Login button
    Then Verify Logged in as username at top
