@@ -3,18 +3,17 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 import pages.AEPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
+
 
 public class AE_stepdefinitions {
-
 AEPage aePage = new AEPage();
 
-    @Given("Kullanici {string} ye gider")
-    public void kullanici_ye_gider(String string) {
+
+    @Given("Given Kullanici {string} ye gider")
+    public void given_kullanici_ye_gider(String string) {
         Driver.getDriver().get(ConfigReader.getProperty("automationExerciseUrl"));
     }
     @Given("Siteye giris yapildigini gorur")
@@ -22,43 +21,49 @@ AEPage aePage = new AEPage();
         String expectedUrl = ConfigReader.getProperty("automationExerciseUrl");
         String actualUrl = Driver.getDriver().getCurrentUrl().toString();
         Assert.assertEquals(expectedUrl,actualUrl);
-
-    }
-    @Given("Kullanici Ana Sayfadaki Product linkine tiklar")
-    public void kullanici_ana_sayfadaki_product_linkine_tiklar() {
-        aePage.products.click();
     }
 
-    @Given("Kullanici {string} yazisini gorur")
-    public void kullanici_yazisini_gorur(String aranansonuc) {
-        String sonucYazisi=aePage.allproducts.getText();
-       Assert.assertTrue(sonucYazisi.contains(aranansonuc));
-    }
-    @Given("Kullanici SearchBox kutusunun gorunur oldugunu dogrular.")
-    public void kullanici_search_box_kutusunun_gorunur_oldugunu_dogrular() {
-        Assert.assertTrue(aePage.searchBox.isDisplayed());
-    }
-    @Then("Kullanici Arama girişine ürün adını girer ve arama düğmesine tıklar")
-    public void kullanici_arama_girişine_ürün_adını_girer_ve_arama_düğmesine_tıklar() {
-        aePage.searchBox.sendKeys("jeans");
-        aePage.searchBoxTik.click();
-    }
-    @Given("Kullanici {string} yazisinin görünür olduğunu doğrular")
-    public void kullanici_yazisinin_görünür_olduğunu_doğrular(String aranansonuc) {
-        String sonucYazisi=aePage.searchedProduct.getText();
-        Assert.assertTrue(sonucYazisi.contains(aranansonuc));
-    }
+    // zeynep
 
-    @Given("Aramayla ilgili tüm ürünlerin görünür olduğunu doğrular")
-    public void aramayla_ilgili_tüm_ürünlerin_görünür_olduğunu_doğrular() {
-        for (WebElement each:aePage.searchedProductsList) {
-            ReusableMethods.hover(each);
-            Assert.assertTrue(each.getText().contains("Jeans"));
-        }
+    @Then("Anasayfadaki {string} butonu gorunur")
+    public void anasayfadakiSignupLoginButonuGorunur() {
+        Assert.assertTrue("Login linki gorundu", aePage.mainPageSignupLoginLinkiElementi.isDisplayed());
     }
-    @Then("Kullanici sayfayi kapatir")
-    public void kullanici_sayfayi_kapatir() {
-        Driver.closeDriver();
+    @Then("Anasayfadaki {string} butonuna tiklanarak Login sayfasina gidilir")
+    public void anasayfadakiSignupLoginButonunaTiklanarakLoginSayfasinaGidilir() {
+        aePage.mainPageSignupLoginLinkiElementi.click();
+    }
+    @Then("Login to your account formu gorunur")
+    public void login_to_your_account_formu_gorunur() {
+        Assert.assertTrue(aePage.loginToYourAccountYazisi.isDisplayed());
+    }
+    @Then("Email Address textboxu gorunur")
+    public void email_address_textboxu_gorunur() {
+        Assert.assertTrue(aePage.loginEmailTextBox.isDisplayed());
+    }
+    @Then("Email Address alanina gecerli email adresi girilir")
+    public void email_address_alanina_gecerli_email_adresi_girilir() {
+        aePage.loginEmailTextBox.sendKeys(ConfigReader.getProperty("loginEmail"));
+    }
+    @Then("Password textboxu gorunur")
+    public void password_textboxu_gorunur() {
+        Assert.assertTrue(aePage.passwordTextBox.isDisplayed());
+    }
+    @Then("Password alanina gecerli sifre girilir")
+    public void password_alanina_gecerli_sifre_girilir() {
+        aePage.passwordTextBox.sendKeys(ConfigReader.getProperty("loginPassword"));
+    }
+    @Then("Login butonu gorunur")
+    public void login_butonu_gorunur() {
+        Assert.assertTrue(aePage.loginButton.isDisplayed());
+    }
+    @Then("Login butonuna tiklanir")
+    public void login_butonuna_tiklanir() {
+        aePage.loginButton.click();
+    }
+    @Given("Gidilen sayfada {string} yazisi gorunur")
+    public void gidilen_sayfada_yazisi_gorunur(String string) {
+        Assert.assertTrue(aePage.loggedInAsYazisi.isDisplayed());
     }
 
 }
