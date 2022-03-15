@@ -9,7 +9,7 @@ import utilities.Driver;
 
 
 public class AE_stepdefinitions {
-AEPage aePage = new AEPage();
+    AEPage aePage = new AEPage();
 
 
     @Given("Given Kullanici {string} ye gider")
@@ -23,15 +23,23 @@ AEPage aePage = new AEPage();
         Assert.assertEquals(expectedUrl,actualUrl);
     }
 
+
     // zeynep
 
     @Then("Anasayfadaki {string} butonu gorunur")
-    public void anasayfadakiSignupLoginButonuGorunur() {
-        Assert.assertTrue("Login linki gorundu", aePage.mainPageSignupLoginLinkiElementi.isDisplayed());
+    public void anasayfadaki_butonu_gorunur(String string) {
+        Assert.assertTrue(aePage.signUpLoginButton.isDisplayed());
     }
-    @Then("Anasayfadaki {string} butonuna tiklanarak Login sayfasina gidilir")
-    public void anasayfadakiSignupLoginButonunaTiklanarakLoginSayfasinaGidilir() {
-        aePage.mainPageSignupLoginLinkiElementi.click();
+    @Then("SignupLogin butonuna tiklanir")
+    public void signuploginButonunaTiklanir() throws InterruptedException {
+        aePage.signUpLoginButton.click();
+        Thread.sleep(1000);
+    }
+    @Then("Login sayfasina gidilir")
+    public void login_sayfasina_gidilir() {
+        String expectedUrl = ConfigReader.getProperty("automationExerciseLoginUrl");
+        String actualUrl = Driver.getDriver().getCurrentUrl().toString();
+        Assert.assertEquals(expectedUrl,actualUrl);
     }
     @Then("Login to your account formu gorunur")
     public void login_to_your_account_formu_gorunur() {

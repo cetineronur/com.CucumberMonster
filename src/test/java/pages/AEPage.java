@@ -92,7 +92,7 @@ public WebElement searchBoxTik;
     public WebElement mainPageImageSlider2ButonElementi;
 
     //mainPage/imageGirl1
-    @FindBy(xpath = "////img[@src='/static/images/home/girl2.jpg']")
+    @FindBy(xpath = "//img[@src='/static/images/home/girl2.jpg']")
     public WebElement mainPageimageGirl1Elementi;
 
     //mainPage/ImageGirl2
@@ -204,13 +204,26 @@ public WebElement searchBoxTik;
     public WebElement mainPageAddtoCardContinueShoppingButonElementi;
 
 
-
 //---------------Sezen--------------------------------------------------------->
 //---------------Zeynep--------------------------------------------------------->
 
+    @FindBy(xpath = "//a[@href='/login']")
+    public WebElement signUpLoginButton;
 
+    @FindBy(xpath = "//h2[text()='Login to your account']")
+    public WebElement loginToYourAccountYazisi;
 
+    @FindBy(xpath = "//input[@data-qa='login-email']")
+    public WebElement loginEmailTextBox;
 
+    @FindBy(xpath = "//input[@data-qa='login-password']")
+    public WebElement passwordTextBox;
+
+    @FindBy(xpath = "//button[@data-qa='login-button']")
+    public WebElement loginButton;
+
+    @FindBy(xpath = "//li[9]//a[1]")
+    public WebElement loggedInAsYazisi;
 
 
 }
