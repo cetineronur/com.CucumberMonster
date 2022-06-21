@@ -38,19 +38,19 @@ AEPage aePage = new AEPage();
     public void kullanici_search_box_kutusunun_gorunur_oldugunu_dogrular() {
         Assert.assertTrue(aePage.searchBox.isDisplayed());
     }
-    @Then("Kullanici Arama girişine ürün adını girer ve arama düğmesine tıklar")
-    public void kullanici_arama_girişine_ürün_adını_girer_ve_arama_düğmesine_tıklar() {
+    @Then("Kullanici Arama girisine urun adini girer ve arama dugmesine tiklar")
+    public void kullanici_arama_girisine_urun_adini_girer_ve_arama_dugmesine_tiklar() {
         aePage.searchBox.sendKeys("jeans");
         aePage.searchBoxTik.click();
     }
-    @Given("Kullanici {string} yazisinin görünür olduğunu doğrular")
-    public void kullanici_yazisinin_görünür_olduğunu_doğrular(String aranansonuc) {
+    @Given("Kullanici {string} yazisinin gorunur oldugunu dogrular")
+    public void kullanici_yazisinin_gorunur_oldugunu_dogrular(String aranansonuc) {
         String sonucYazisi=aePage.searchedProduct.getText();
         Assert.assertTrue(sonucYazisi.contains(aranansonuc));
     }
 
-    @Given("Aramayla ilgili tüm ürünlerin görünür olduğunu doğrular")
-    public void aramayla_ilgili_tüm_ürünlerin_görünür_olduğunu_doğrular() {
+    @Given("Aramayla ilgili tum urunlerin gorunur oldugunu dogrular")
+    public void aramayla_ilgili_tum_urunlerin_gorunur_oldugunu_dogrular() {
         for (WebElement each:aePage.searchedProductsList) {
             ReusableMethods.hover(each);
             Assert.assertTrue(each.getText().contains("Jeans"));
