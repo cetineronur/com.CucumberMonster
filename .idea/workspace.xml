@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9ef1fc76-9602-4775-8dd8-1636da99d9bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/AE_stepdefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AE_stepdefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US004.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US004.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/US004.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/US004.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +63,7 @@
       <recent name="stepdefinitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: US004">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="All Features in: com.CucumberMonster" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$" />
@@ -162,9 +159,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Feature: US004" />
         <item itemvalue="Cucumber Java.All Features in: com.CucumberMonster" />
-        <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: TC02: Arama kutusuna bir urun adi yazip search yapabilmeli" />
         <item itemvalue="Cucumber Java.Scenario: TC 01 Kullanici web sayfasina gidebilmeli" />
       </list>
