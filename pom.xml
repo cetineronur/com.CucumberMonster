@@ -71,7 +71,7 @@
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <testFailureIgnore>false</testFailureIgnore>
                     <includes>
-                        <include>**/runners/**Runner*.java</include>
+                        <include>**/runners/Runner.java</include>
                     </includes>
                 </configuration>
             </plugin>
