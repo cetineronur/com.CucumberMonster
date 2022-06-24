@@ -1,4 +1,4 @@
-@smoketest
+
 Feature: Bir kullanici olarak, sayfaya giris yapabilmek ve arama kutusuna yazdigim ürünün sonuclarini görebilmek istiyorum.
 
   Scenario: TC 01 Kullanici web sayfasina gidebilmeli
