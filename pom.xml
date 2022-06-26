@@ -4,99 +4,77 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>com.ApidemosCucumber</artifactId>
+    <groupId>com.vytrack</groupId>
+    <artifactId>Summer2019OnlineCucumberSelenium</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
-        <dependency>
-            <groupId>io.appium</groupId>
-            <artifactId>java-client</artifactId>
-            <version>7.3.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.0.3</version>
+            <version>3.7.1</version>
+            <!--            <scope>test</scope>-->
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>7.3.1</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
+
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.1</version>
-            <scope>test</scope>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.0.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
-            <groupId>com.github.javafaker</groupId>
-            <artifactId>javafaker</artifactId>
-            <version>1.0.2</version>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>4.7.4</version>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>7.2.3</version>
+            <version>4.7.4</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.21</version>
+        </dependency>
 
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0-M1</version>
-                <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <skipTests>false</skipTests>
-                    <includes>
-                        <include>**/runners/*TestRunner*.java</include>
-                    </includes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M1</version>
+                <version>3.0.0-M3</version>
                 <configuration>
-                    <parallel>classes</parallel>
-                    <forkMode>perthread</forkMode>
-                    <threadCount>2</threadCount>
-                    <reuseForks>false</reuseForks>
-                    <argLine>-Duser.language=en</argLine>
-                    <argLine>-Xmx1024m</argLine>
-                    <argLine>-XX:MaxPermSize=256m</argLine>
-                    <argLine>-Dfile.encoding=UTF-8</argLine>
-                    <useFile>false</useFile>
+                    <runOrder>Alphabetical</runOrder>
                     <includes>
-                        <include>**/runners/*TestRunner*.java</include>
+                        <include>**/CucumberRunner.java</include>
+
                     </includes>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <testFailureIgnore>false</testFailureIgnore>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.0.0</version>
+                <version>4.9.0</version>
                 <executions>
                     <execution>
                         <id>execution</id>
@@ -105,29 +83,42 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>cucumber-framework</projectName>
+                            <projectName>Cucumber HTML Reports</projectName>
                             <outputDirectory>${project.build.directory}</outputDirectory>
-                            <!--                            <cucumberOutput>${project.build.directory}</cucumberOutput>-->
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
-                                <param>**/json-reports/*.json</param>
-                            </jsonFiles><classificationFiles>->
-                            <param>sample.properties</param>
-                            <param>other.properties</param>
-                        </classificationFiles>
+                                <param>**/cucumber*.json</param>
+                            </jsonFiles>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>RegressionRunner</id>
+            <build>
+                <plugins>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M3</version>
+                        <configuration>
+
+                            <parallel>methods</parallel>
+                            <perCoreThreadCount>false</perCoreThreadCount>
+                            <threadCountMethods>2</threadCountMethods>
+                            <includes>
+                                <include>**/RegressionRunner.java</include>
+                            </includes>
+                            <testFailureIgnore>false</testFailureIgnore>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

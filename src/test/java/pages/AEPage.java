@@ -11,7 +11,7 @@ public class AEPage {
 
 public AEPage(){
 
-    PageFactory.initElements(Driver.getDriver(),this);
+    PageFactory.initElements(Driver.get(),this);
 
 }
 

@@ -9,18 +9,19 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
+
 public class AE_stepdefinitions {
 
 AEPage aePage = new AEPage();
 
     @Given("Kullanici {string} ye gider")
     public void kullanici_ye_gider(String string) {
-        Driver.getDriver().get(ConfigReader.getProperty("automationExerciseUrl"));
+        Driver.get().get(ConfigReader.getProperty("automationExerciseUrl"));
     }
     @Given("Siteye giris yapildigini gorur")
     public void siteye_giris_yapildigini_gorur() {
         String expectedUrl = ConfigReader.getProperty("automationExerciseUrl");
-        String actualUrl = Driver.getDriver().getCurrentUrl().toString();
+        String actualUrl = Driver.get().getCurrentUrl().toString();
         Assert.assertEquals(expectedUrl,actualUrl);
 
     }
@@ -58,7 +59,7 @@ AEPage aePage = new AEPage();
     }
     @Then("Kullanici sayfayi kapatir")
     public void kullanici_sayfayi_kapatir() {
-        Driver.closeDriver();
+        Driver.close();
     }
 
 }
