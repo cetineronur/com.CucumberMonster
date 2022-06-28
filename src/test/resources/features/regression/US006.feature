@@ -1,6 +1,6 @@
 
 
-Feature:
+Feature:onur
 
   Scenario: TC 01 Kullanici web sayfasina gidebilmeli
     Given Kullanici "url" ye gider

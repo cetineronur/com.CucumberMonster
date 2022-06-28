@@ -28,6 +28,11 @@ AEPage aePage = new AEPage();
     @Given("Kullanici Ana Sayfadaki Product linkine tiklar")
     public void kullanici_ana_sayfadaki_product_linkine_tiklar() {
         aePage.products.click();
+        int a=1;
+        for (int i=5;i>0;i--){
+            a*=i;
+        }
+        System.out.println("a = " + a);
     }
 
     @Given("Kullanici {string} yazisini gorur")

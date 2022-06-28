@@ -36,12 +36,25 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
                     break;
-
+                case "chrome_headless":
+                    WebDriverManager.chromedriver().setup();
+                    driverPool.set(new ChromeDriver(new ChromeOptions().setHeadless(true)));
+                    break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driverPool.set(new FirefoxDriver());
                     break;
-
+                case "firefox_headless":
+                    WebDriverManager.firefoxdriver().setup();
+                    driverPool.set(new FirefoxDriver(new FirefoxOptions().setHeadless(true)));
+                    break;
+                case "ie":
+                    if (!System.getProperty("os.name").toLowerCase().contains("windows")) {
+                        throw new WebDriverException("Your OS doesn't support Internet Explorer");
+                    }
+                    WebDriverManager.iedriver().setup();
+                    driverPool.set(new InternetExplorerDriver());
+                    break;
                 case "edge":
                     if (!System.getProperty("os.name").toLowerCase().contains("windows")) {
                         throw new WebDriverException("Your OS doesn't support Edge");
@@ -57,6 +70,26 @@ public class Driver {
                     driverPool.set(new SafariDriver());
                     break;
 
+                case "remote_chrome":
+                    try {
+                        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+                        desiredCapabilities.setBrowserName(BrowserType.CHROME);
+                        desiredCapabilities.setCapability("platform", Platform.ANY);
+                        driverPool.set(new RemoteWebDriver(new URL("http://192.168.1.105:4444/"), desiredCapabilities));
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case "remote_firefox":
+                    try {
+                        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+                        desiredCapabilities.setBrowserName(BrowserType.FIREFOX);
+                        desiredCapabilities.setCapability("platform", Platform.ANY);
+                        driverPool.set(new RemoteWebDriver(new URL("http://192.168.1.105:4444/wd/hub"), desiredCapabilities));
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    break;
             }
         }
         //return corresponded to thread id webdriver object
