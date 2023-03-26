@@ -3,6 +3,8 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import pages.AEPage;
 import utilities.ConfigReader;
@@ -27,12 +29,14 @@ AEPage aePage = new AEPage();
     }
     @Given("Kullanici Ana Sayfadaki Product linkine tiklar")
     public void kullanici_ana_sayfadaki_product_linkine_tiklar() {
+        //ReusableMethods.waitFor(1);
         aePage.products.click();
-        int a=1;
-        for (int i=5;i>0;i--){
-            a*=i;
-        }
-        System.out.println("a = " + a);
+        //int boyut = Driver.get().findElements(By.tagName("iframe")).size();
+        Driver.get().switchTo().frame(0).navigate().back();
+        //aePage.iframe.click();
+        Driver.get().switchTo().defaultContent();
+        aePage.products.click();
+
     }
 
     @Given("Kullanici {string} yazisini gorur")
@@ -58,8 +62,10 @@ AEPage aePage = new AEPage();
     @Given("Aramayla ilgili tum urunlerin gorunur oldugunu dogrular")
     public void aramayla_ilgili_tum_urunlerin_gorunur_oldugunu_dogrular() {
         for (WebElement each:aePage.searchedProductsList) {
-            ReusableMethods.hover(each);
+            JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
+            jse.executeScript("arguments[0].scrollIntoView()",each);
             Assert.assertTrue(each.getText().contains("Jeans"));
+            ReusableMethods.waitFor(1);
         }
     }
     @Then("Kullanici sayfayi kapatir")

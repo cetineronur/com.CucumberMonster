@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="6" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="14" time="54.790624">
+<testcase classname="" name="TC 01 Kullanici web sayfasina gidebilmeli" time="11.455297">
+<system-out><![CDATA[Given Kullanici "url" ye gider..............................................passed
+And Siteye giris yapildigini gorur..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="" name="TC02: Arama kutusuna bir urun adi yazip search yapabilmeli" time="8.47143">
+<system-out><![CDATA[Given Kullanici Ana Sayfadaki Product linkine tiklar........................passed
+And Kullanici "ALL PRODUCTS" yazisini gorur.................................passed
+And Kullanici SearchBox kutusunun gorunur oldugunu dogrular.................passed
+Then Kullanici Arama girisine urun adini girer ve arama dugmesine tiklar....passed
+]]></system-out>
+</testcase>
+<testcase classname="" name="TC03 Arama kutusuna yazdigi bir urunun sonuclarini gorebilmeli" time="1.737779">
+<system-out><![CDATA[Given Kullanici "SEARCHED PRODUCTS" yazisinin gorunur oldugunu dogrular.....passed
+And Aramayla ilgili tum urunlerin gorunur oldugunu dogrular.................passed
+Then Kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="onur" name="TC 01 Kullanici web sayfasina gidebilmeli" time="6.570515">
+<system-out><![CDATA[Given Kullanici "url" ye gider..............................................passed
+And Siteye giris yapildigini gorur..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="onur" name="TC02: Arama kutusuna bir urun adi yazip search yapabilmeli" time="8.595755">
+<system-out><![CDATA[Given Kullanici Ana Sayfadaki Product linkine tiklar........................passed
+And Kullanici "ALL PRODUCTS" yazisini gorur.................................passed
+And Kullanici SearchBox kutusunun gorunur oldugunu dogrular.................passed
+Then Kullanici Arama girisine urun adini girer ve arama dugmesine tiklar....passed
+]]></system-out>
+</testcase>
+<testcase classname="onur" name="TC03 Arama kutusuna yazdigi bir urunun sonuclarini gorebilmeli" time="0.961959">
+<system-out><![CDATA[Given Kullanici "SEARCHED PRODUCTS" yazisinin gorunur oldugunu dogrular.....passed
+And Aramayla ilgili tum urunlerin gorunur oldugunu dogrular.................passed
+Then Kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="" name="amazon arama" time="7.638343">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class='a-size-base-plus a-color-base a-text-normal']&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e46bdd847eac8992f4db8b5c63fc9c32&#10;*** Element info: {Using=xpath, value=//span[@class='a-size-base-plus a-color-base a-text-normal']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)&#13;&#10;&#9;at stepdefinitions.amazon.arama_sonuclarini_degerlendirir(amazon.java:38)&#13;&#10;&#9;at ✽.arama sonuclarini degerlendirir(file:src/test/resources/features/regression/amazon.feature:6)&#13;&#10;"><![CDATA[Given kullanici url ye gider................................................passed
+And arama kutusundan arama yapar............................................passed
+And arama sonuclarini degerlendirir.........................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='a-size-base-plus a-color-base a-text-normal']"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e46bdd847eac8992f4db8b5c63fc9c32
+*** Element info: {Using=xpath, value=//span[@class='a-size-base-plus a-color-base a-text-normal']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at stepdefinitions.amazon.arama_sonuclarini_degerlendirir(amazon.java:38)
+	at ✽.arama sonuclarini degerlendirir(file:src/test/resources/features/regression/amazon.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="" name="_2" time="1.195827">
+<system-out><![CDATA[Given siteyi acar...........................................................passed
+And gmail ve bildera tiklar.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="1" name="Rechnung Erstellung" time="2.871627">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='ALLE AUSWÃ„HLEN']&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e46bdd847eac8992f4db8b5c63fc9c32&#10;*** Element info: {Using=xpath, value=//*[text()='ALLE AUSWÃ„HLEN']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy19.click(Unknown Source)&#13;&#10;&#9;at stepdefinitions.BergFreunde_Stepdefinitions.benutzer_klickt_cookie(BergFreunde_Stepdefinitions.java:32)&#13;&#10;&#9;at ✽.Benutzer klickt cookie(file:src/test/resources/features/regression/verkaufen.feature:6)&#13;&#10;"><![CDATA[Given Benutzer schreibt den "url"...........................................passed
+Given Benutzer klickt cookie................................................failed
+Given Benutzer klickt Einloggen.............................................skipped
+Given Benutzer schreibt eigene "onur_cetiner@outlook.de" adresse............skipped
+Then Benutzer schreibt eigene "Urfa2016"....................................skipped
+Then Benutzer klickt die einloggen button...................................skipped
+Then Benutzer bewegt den Mauszeiger im Menu uber die Schuhe.................skipped
+And Benutzer klickt im Dropdown-Menu auf Sandalen...........................skipped
+And Benutzer klickt erste Product...........................................skipped
+And Benutzer wahlt Farbe von schuhe.........................................skipped
+And Benutzer wahlt Gorsse von schuhe........................................skipped
+And Benutzer klickt in den warenkorb........................................skipped
+And Benutzer klickt zum warenkorb...........................................skipped
+And Benutzer klickt zur kasse gehen.........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='ALLE AUSWÃ„HLEN']"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e46bdd847eac8992f4db8b5c63fc9c32
+*** Element info: {Using=xpath, value=//*[text()='ALLE AUSWÃ„HLEN']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at stepdefinitions.BergFreunde_Stepdefinitions.benutzer_klickt_cookie(BergFreunde_Stepdefinitions.java:32)
+	at ✽.Benutzer klickt cookie(file:src/test/resources/features/regression/verkaufen.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="1" name="Meine Rechnungadresse" time="0.756028">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='invadr[oxuser__oxfname]']&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e46bdd847eac8992f4db8b5c63fc9c32&#10;*** Element info: {Using=xpath, value=//input[@name='invadr[oxuser__oxfname]']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at stepdefinitions.BergFreunde_Stepdefinitions.benutzer_schreibt_in_den(BergFreunde_Stepdefinitions.java:110)&#13;&#10;&#9;at ✽.Benutzer schreibt &quot;o&quot; in den &quot;fname&quot;(file:src/test/resources/features/regression/verkaufen.feature:26)&#13;&#10;"><![CDATA[And Benutzer schreibt "o" in den "fname"....................................failed
+And Benutzer schreibt "k" in den "lname"....................................skipped
+And Benutzer schreibt "" in den "street"....................................skipped
+And Benutzer schreibt "" in den "streetnr"..................................skipped
+And Benutzer schreibt "" in den "zip".......................................skipped
+And Benutzer schreibt "" in den "city"......................................skipped
+And Benutzer wahlt den "Deutschland"........................................skipped
+And Benutzer schreibt "07" in den "day" box.................................skipped
+And Benutzer schreibt "03" in den "month" box...............................skipped
+And Benutzer schreibt "2021" in den "year" box..............................skipped
+And Benutzer klickt weiter zur zahlungsart..................................skipped
+And Benutzer klickt sofort uberweisung......................................skipped
+And Benutzer klickt bestellung uberprufen...................................skipped
+And Benutzer kontrolliert strasse und strasse nummer........................skipped
+And Benutzer kontrolliert Plz und Ort.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='invadr[oxuser__oxfname]']"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e46bdd847eac8992f4db8b5c63fc9c32
+*** Element info: {Using=xpath, value=//input[@name='invadr[oxuser__oxfname]']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepdefinitions.BergFreunde_Stepdefinitions.benutzer_schreibt_in_den(BergFreunde_Stepdefinitions.java:110)
+	at ✽.Benutzer schreibt "o" in den "fname"(file:src/test/resources/features/regression/verkaufen.feature:26)
+]]></failure>
+</testcase>
+<testcase classname="1" name="Meine Rechnungadresse 2" time="0.781052">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='invadr[oxuser__oxfname]']&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e46bdd847eac8992f4db8b5c63fc9c32&#10;*** Element info: {Using=xpath, value=//input[@name='invadr[oxuser__oxfname]']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at stepdefinitions.BergFreunde_Stepdefinitions.benutzer_schreibt_in_den(BergFreunde_Stepdefinitions.java:110)&#13;&#10;&#9;at ✽.Benutzer schreibt &quot;&quot; in den &quot;fname&quot;(file:src/test/resources/features/regression/verkaufen.feature:26)&#13;&#10;"><![CDATA[And Benutzer schreibt "" in den "fname".....................................failed
+And Benutzer schreibt "" in den "lname".....................................skipped
+And Benutzer schreibt "a" in den "street"...................................skipped
+And Benutzer schreibt "1" in den "streetnr".................................skipped
+And Benutzer schreibt "" in den "zip".......................................skipped
+And Benutzer schreibt "*." in den "city"....................................skipped
+And Benutzer wahlt den "Italien"............................................skipped
+And Benutzer schreibt "07" in den "day" box.................................skipped
+And Benutzer schreibt "03" in den "month" box...............................skipped
+And Benutzer schreibt "2021" in den "year" box..............................skipped
+And Benutzer klickt weiter zur zahlungsart..................................skipped
+And Benutzer klickt sofort uberweisung......................................skipped
+And Benutzer klickt bestellung uberprufen...................................skipped
+And Benutzer kontrolliert strasse und strasse nummer........................skipped
+And Benutzer kontrolliert Plz und Ort.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='invadr[oxuser__oxfname]']"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e46bdd847eac8992f4db8b5c63fc9c32
+*** Element info: {Using=xpath, value=//input[@name='invadr[oxuser__oxfname]']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepdefinitions.BergFreunde_Stepdefinitions.benutzer_schreibt_in_den(BergFreunde_Stepdefinitions.java:110)
+	at ✽.Benutzer schreibt "" in den "fname"(file:src/test/resources/features/regression/verkaufen.feature:26)
+]]></failure>
+</testcase>
+<testcase classname="1" name="Meine Rechnungadresse 3" time="1.481743">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='invadr[oxuser__oxfname]']&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e46bdd847eac8992f4db8b5c63fc9c32&#10;*** Element info: {Using=xpath, value=//input[@name='invadr[oxuser__oxfname]']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at stepdefinitions.BergFreunde_Stepdefinitions.benutzer_schreibt_in_den(BergFreunde_Stepdefinitions.java:110)&#13;&#10;&#9;at ✽.Benutzer schreibt &quot;*.*/&quot; in den &quot;fname&quot;(file:src/test/resources/features/regression/verkaufen.feature:26)&#13;&#10;"><![CDATA[And Benutzer schreibt "*.*/" in den "fname".................................failed
+And Benutzer schreibt "cetin" in den "lname"................................skipped
+And Benutzer schreibt "*." in den "street"..................................skipped
+And Benutzer schreibt "123456" in den "streetnr"............................skipped
+And Benutzer schreibt "6431" in den "zip"...................................skipped
+And Benutzer schreibt "jahn" in den "city"..................................skipped
+And Benutzer wahlt den "Belgien"............................................skipped
+And Benutzer schreibt "07" in den "day" box.................................skipped
+And Benutzer schreibt "03" in den "month" box...............................skipped
+And Benutzer schreibt "2021" in den "year" box..............................skipped
+And Benutzer klickt weiter zur zahlungsart..................................skipped
+And Benutzer klickt sofort uberweisung......................................skipped
+And Benutzer klickt bestellung uberprufen...................................skipped
+And Benutzer kontrolliert strasse und strasse nummer........................skipped
+And Benutzer kontrolliert Plz und Ort.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='invadr[oxuser__oxfname]']"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e46bdd847eac8992f4db8b5c63fc9c32
+*** Element info: {Using=xpath, value=//input[@name='invadr[oxuser__oxfname]']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepdefinitions.BergFreunde_Stepdefinitions.benutzer_schreibt_in_den(BergFreunde_Stepdefinitions.java:110)
+	at ✽.Benutzer schreibt "*.*/" in den "fname"(file:src/test/resources/features/regression/verkaufen.feature:26)
+]]></failure>
+</testcase>
+<testcase classname="webtable" name="TC01 kullanici web sayfasina gider" time="2.116973">
+<system-out><![CDATA[Given kullanici web sayfasina gider.........................................passed
+And siteye giris yapildigini gorur..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="webtable" name="TC02 Kullanici tablodaki hucreleri ekrana yazdirir" time="0.156296">
+<failure message="org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElements(By.java:348)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)&#13;&#10;&#9;at com.sun.proxy.$Proxy20.iterator(Unknown Source)&#13;&#10;&#9;at utilities.ReusableMethods.getcell(ReusableMethods.java:124)&#13;&#10;&#9;at stepdefinitions.Webtable_stepDef.kullanici_tablodaki_hucreleri_ekrana_yazdirir(Webtable_stepDef.java:29)&#13;&#10;&#9;at ✽.kullanici tablodaki hucreleri ekrana yazdirir(file:src/test/resources/features/regression/webtable.feature:10)&#13;&#10;"><![CDATA[Given kullanici tablodaki hucreleri ekrana yazdirir.........................failed
+And kullanici tablodaki satirlari ekrana yazdirir...........................skipped
+And kullanici tablodaki birinci sutunu ekrana yazdirir......................skipped
+And kullanici tablodaki ikinci sutunu ekrana yazdirir.......................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ONUR', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+	at com.sun.proxy.$Proxy20.iterator(Unknown Source)
+	at utilities.ReusableMethods.getcell(ReusableMethods.java:124)
+	at stepdefinitions.Webtable_stepDef.kullanici_tablodaki_hucreleri_ekrana_yazdirir(Webtable_stepDef.java:29)
+	at ✽.kullanici tablodaki hucreleri ekrana yazdirir(file:src/test/resources/features/regression/webtable.feature:10)
+]]></failure>
+</testcase>
+</testsuite>

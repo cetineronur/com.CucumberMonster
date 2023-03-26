@@ -26,8 +26,11 @@ public AEPage(){
 @FindBy (xpath = "//a[@href='/products']")
 public WebElement products;
 
+@FindBy(xpath = "//*[@style='filter: url(\"#dropShadowTop\");']")
+public WebElement reklam;
+
     //MainPage--->products Linki----->All Products text
-@FindBy(xpath = "//h2[@class='title text-center']")
+@FindBy(css = "h2.title")
 public WebElement allproducts;
 
     //MainPage--->products Linki----->SearchBox
@@ -35,15 +38,16 @@ public WebElement allproducts;
 public WebElement searchBox;
 
     //MainPage--->products Linki----->SearchBox arama tusu
-@FindBy(xpath = "//button[@id='submit_search']")
+@FindBy(css = "button#submit_search")
 public WebElement searchBoxTik;
 
     //MainPage--->products Linki----->Searached Product yazisi
-@FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/h2")
+@FindBy(css = "h2.title")
     public WebElement searchedProduct;
 
 @FindBy(xpath = "//div[@class='product-image-wrapper']")
     public List<WebElement> searchedProductsList;
+
 
 //---------------Salih--------------------------------------------------------->
 

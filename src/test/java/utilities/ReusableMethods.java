@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.w3school;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -18,6 +20,8 @@ import java.util.List;
 import java.util.function.Function;
 
 public class ReusableMethods {
+
+   static w3school w3school = new w3school();
 
     public static String getScreenshot(String name) throws IOException {
         // naming the screenshot with the current date to avoid duplication
@@ -48,7 +52,9 @@ public class ReusableMethods {
     //========Hover Over=====//
     public static void hover(WebElement element) {
         Actions actions = new Actions(Driver.get());
-        actions.moveToElement(element).perform();
+        actions.moveToElement(element);
+        ReusableMethods.waitFor(2);
+        actions.perform();
     }
 
     //==========Return a list of string given a list of Web Element====////
@@ -78,7 +84,7 @@ public class ReusableMethods {
 //   waitFor(5);  => waits for 5 second
     public static void waitFor(int sec) {
         try {
-            Thread.sleep(sec * 100);
+            Thread.sleep(sec * 10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -99,4 +105,39 @@ public class ReusableMethods {
 
         return element;
     }
+
+    public static void slide(WebElement element){
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
+        jse.executeScript("arguments[0].scrollIntoView()",element);
+        jse.executeScript("arguments[0].click();", element);
+    }
+
+    public static void getBasliklar(){
+      List<WebElement> baslik = w3school.basliklar;
+        for (WebElement each:baslik) {
+            System.out.println(each.getText());
+        }
+    }
+
+    public static void getcell(){
+        List<WebElement> baslik = w3school.allecell;
+        for (WebElement each:baslik) {
+            System.out.println(each.getText());
+        }
+    }
+
+    public static void getalleRow(){
+        List<WebElement> baslik = w3school.allerow;
+        for (WebElement each:baslik) {
+            System.out.println(each.getText());
+        }
+    }
+
+    public static void getRow(int sutun){
+        List<WebElement> baslik = Driver.get().findElements(By.xpath("//table//tr//td["+sutun+"]"));
+        for (WebElement each:baslik) {
+            System.out.println(sutun+" .sutun " + each.getText());
+        }
+    }
+
 }

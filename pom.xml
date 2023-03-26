@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.vytrack</groupId>
-    <artifactId>Summer2019OnlineCucumberSelenium</artifactId>
+    <artifactId>CucumberSelenium</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -17,8 +17,7 @@
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>3.7.1</version>
-            <!--            <scope>test</scope>-->
+            <version>5.2.0</version>
         </dependency>
 
         <dependency>
@@ -30,7 +29,13 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>4.0.1</version>
+            <version>4.1.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.2</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -39,7 +44,6 @@
             <artifactId>cucumber-java</artifactId>
             <version>4.7.4</version>
         </dependency>
-
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
@@ -54,6 +58,12 @@
             <version>1.7.21</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.5</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -61,12 +71,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M3</version>
+                <version>3.0.0-M5</version>
                 <configuration>
                     <runOrder>Alphabetical</runOrder>
 
                     <includes>
-                        <include>**/CucumberRunner.java</include>
+                        <include>**/RegressionRunner.java</include>
 
                     </includes>
                     <testFailureIgnore>false</testFailureIgnore>
@@ -104,7 +114,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
-                        <version>3.0.0-M3</version>
+                        <version>3.0.0-M5</version>
                         <configuration>
                             <parallel>methods</parallel>
                             <perCoreThreadCount>false</perCoreThreadCount>
