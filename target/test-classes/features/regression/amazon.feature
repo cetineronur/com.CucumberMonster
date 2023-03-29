@@ -1,4 +1,4 @@
-Feature:
+Feature:amazon arama
 
   Scenario: amazon arama
     Given kullanici url ye gider
